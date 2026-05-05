@@ -1,0 +1,17 @@
+{
+  "extends": "@tsconfig/node24/tsconfig.json",
+  "include": ["*.ts", "scripts/**/*.ts", "src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["build", "dist", "node_modules"],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "rewriteRelativeImportExtensions": true,
+    "typeRoots": ["./node_modules/@types", "./**/typescript/**/*.d.ts"],
+    "verbatimModuleSyntax": true
+  }
+}

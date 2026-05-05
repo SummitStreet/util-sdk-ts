@@ -1,0 +1,78 @@
+{
+  "name": "@summitstreet/sst-ts-core",
+  "version": "1.0.0",
+  "author": "David Padgett <https://github.com/SummitStreet>",
+  "license": "MIT",
+  "description": "The Core TypeScript SDK is a library containing various types, functions, and data useful to TypeScript-based apps.",
+  "keywords": [
+    "typescript",
+    "sdk",
+    "utilities"
+  ],
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SummitStreet/sst-ts-core.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build:pre": "tsx scripts/pre-build.ts",
+    "build:post": "tsx scripts/post-build.ts",
+    "build": "npm run build:pre && tsc --project tsconfig.build.json && npm run build:post",
+    "coverage": "npm run test:unit -- --run --coverage",
+    "format": "prettier --write .",
+    "format-ci": "prettier --check .",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build && npm test",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "test:unit": "vitest",
+    "test": "npm run test:unit -- --run"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@eslint/markdown": "8.0.1",
+    "@html-eslint/eslint-plugin": "0.60.0",
+    "@html-eslint/parser": "0.60.0",
+    "@tsconfig/node-ts": "23.6.4",
+    "@tsconfig/node24": "24.0.4",
+    "@types/node": "25.6.0",
+    "@typescript-eslint/eslint-plugin": "8.58.2",
+    "@typescript-eslint/parser": "8.58.2",
+    "@vitest/coverage-v8": "4.1.5",
+    "concurrently": "9.2.1",
+    "eslint": "10.3.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-jsdoc": "62.9.0",
+    "eslint-plugin-json": "4.0.1",
+    "eslint-plugin-simple-import-sort": "13.0.0",
+    "globals": "17.6.0",
+    "markdownlint-cli": "0.48.0",
+    "nodemon": "3.1.14",
+    "postcss-html": "1.8.1",
+    "prettier": "3.8.3",
+    "shx": "0.4.0",
+    "ts-node": "10.9.2",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.59.1",
+    "vitest": "4.1.5"
+  },
+  "dependencies": {}
+}
