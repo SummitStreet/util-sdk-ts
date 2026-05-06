@@ -1,6 +1,6 @@
-# @summitstreet/sst-ts-core
+# @summitstreet/util-sdk-ts
 
-Core TypeScript SDK — a zero-dependency utility library for TypeScript-based applications. Provides utilities for identifier string manipulation.
+TypeScript Util SDK — a zero-dependency utility library for TypeScript-based applications. Provides utilities for identifier string manipulation.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ npm login --scope=@summitstreet --registry=https://npm.pkg.github.com
 **3. Install the package:**
 
 ```
-npm install @summitstreet/sst-ts-core
+npm install @summitstreet/util-sdk-ts
 ```
 
 ## Development

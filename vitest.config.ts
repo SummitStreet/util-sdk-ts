@@ -23,7 +23,7 @@
  * SOFTWARE.
  *
  * @file
- * Vitest configuration for the sst-ts-core project.
+ * Vitest configuration for the util-sdk-ts project.
  */
 
 import { defineConfig } from "vitest/config";

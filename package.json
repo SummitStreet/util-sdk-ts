@@ -1,9 +1,9 @@
 {
-  "name": "@summitstreet/sst-ts-core",
-  "version": "1.0.0",
+  "name": "@summitstreet/util-sdk-ts",
+  "version": "2.0.0",
   "author": "David Padgett <https://github.com/SummitStreet>",
   "license": "MIT",
-  "description": "The Core TypeScript SDK is a library containing various types, functions, and data useful to TypeScript-based apps.",
+  "description": "The TypeScript Util SDK is a library containing various types, functions, and data useful to TypeScript-based apps.",
   "keywords": [
     "typescript",
     "sdk",
@@ -25,7 +25,7 @@
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SummitStreet/sst-ts-core.git"
+    "url": "git+https://github.com/SummitStreet/util-sdk-ts.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
